@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--pretrained_model_path /home/guider/work/SeeSR/preset/models/stable-diffusion-2-base \
+--prompt '' \
+--brdm_model_path checkpoints/BRDM \
+--ram_ft_path /home/guider/work/SeeSR/preset/models/DAPE.pth \
+--image_path /data/09385/data/sr/DDPD/test_c/source \
+--output_dir preset/datasets/results \
+--start_point lr \
+--vae_encoder_tiled_size 512 \
+--num_inference_steps 20 \
+--guidance_scale 5.5 \
+--latent_tiled_size 64 \
+--latent_tiled_overlap 32 \
+--upscale 1 \
+--process_size 512
