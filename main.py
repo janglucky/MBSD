@@ -121,7 +121,7 @@ def load_brdm_pipeline(args, accelerator, enable_xformers_memory_efficient_atten
 
 def load_tag_model(args, device='cuda'):
     
-    model = ram(pretrained='/home/guider/work/SeeSR/preset/models/ram_swin_large_14m.pth',
+    model = ram(pretrained='preset/models/ram_swin_large_14m.pth',
                 pretrained_condition=args.ram_ft_path,
                 image_size=384,
                 vit='swin_l')

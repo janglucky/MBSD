@@ -1,9 +1,9 @@
 CUDA_VISIBLE_DEVICES=0 python main.py \
---pretrained_model_path /home/guider/work/SeeSR/preset/models/stable-diffusion-2-base \
+--pretrained_model_path preset/models/stable-diffusion-2-base \
 --prompt '' \
 --brdm_model_path checkpoints/BRDM \
---ram_ft_path /home/guider/work/SeeSR/preset/models/DAPE.pth \
---image_path /data/09385/data/sr/DDPD/test_c/source \
+--ram_ft_path preset/models/DAPE.pth \
+--image_path DDPD/test_c/source \
 --output_dir preset/datasets/results \
 --start_point lr \
 --vae_encoder_tiled_size 512 \
